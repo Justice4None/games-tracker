@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Game Library Tracker</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="container">
+  <h3 class="header">Game Library Tracker</h3>
+  <div id="buttons">
+    <button class="btn" id="title-sort">Sort By Title</button>
+    <button class="btn" id="dev-sort">Sort By Developer</button>
+    <button class="btn" id="pub-sort">Sort By Publisher</button>
+    <button class="btn" id="release-sort">Sort By Release Date</button>
+    <button class="btn" id="genre-sort">Sort By Genre</button>
+    <button class="btn" id="critic-sort">Sort By Critic Ratings</button>
+    <button class="btn" id="user-sort">Sort By User Ratings</button>
+  </div>
+  <table id="results">
+    <thead>
+      <tr>
+        <th id="library-title">Title</th>
+        <th id="library-dev">Developer</th>
+        <th id="library-pub">Publisher</th>
+        <th id="library-release">Release Date</th>
+        <th id="library-genre">Genre</th>
+        <th id="library-critic">Critic Ratings</th>
+        <th id="library-user">User Ratings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Results from "gamesdb" here -->
+    </tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+
+</html>
